@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_configSerial">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>6</y>
+      <width>470</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Configure the serial line</string>
+    </property>
+    <widget class="QLabel" name="label_speed">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>110</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed ( BaudRate )</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dataBits">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>110</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Data bits</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_stopBits">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>70</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop bits</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_parity">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>30</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Parity</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_flowControl">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>110</y>
+       <width>70</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Flow control</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_speed">
+     <property name="geometry">
+      <rect>
+       <x>126</x>
+       <y>68</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_dataBits">
+     <property name="geometry">
+      <rect>
+       <x>126</x>
+       <y>108</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_parity">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>28</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_stopBits">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>68</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_flowControl">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>108</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_comPort">
+     <property name="geometry">
+      <rect>
+       <x>126</x>
+       <y>28</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_comPort">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>30</y>
+       <width>100</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Com-Port name</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OPEN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_actionMsg">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>150</y>
+       <width>331</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ACTION MSG BAR</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
