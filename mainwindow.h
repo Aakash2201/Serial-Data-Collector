@@ -26,11 +26,13 @@ public:
     // Adding structures objects
     mySerial    CurrSerialInfo;
 
+    // This bool will check whether serial port is on/off
+    bool isPortOpen = false;
+
 private slots:
     void slot_initialSetup();                   // This slot is used to fill up UI elemenst like dropdown and basically as name suggests initialsetup.
-    void slot_readUserInfo();                   // This slot is used to read users serial configuration.
     void slot_fillStruct();                     // This slot is used to fill users selected config into structure and passing it to serialThread.
-    void slot_readSerial();                     // This slot is used to read the data coming from serialthread and representing it in UI.
+    void slot_readSerial(QString, bool);        // This slot is used to read the data coming from serialthread and representing it in UI.
 
     void on_pushButton_open_clicked();          // This btn indicates that user has finished filling config for serial port to open
 

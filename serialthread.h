@@ -26,6 +26,7 @@ public:
 
 public slots:
     void setupSerialPort(mySerial);             // This will setup all parameters of our port as per Users request
+    void closeSerialPort();                     // This will close current running serial port as per Users request
 
 private slots:
     void readData_Serial();                     // This function will actual starts reading from serial port when recvs ready read signal

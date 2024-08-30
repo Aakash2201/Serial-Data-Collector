@@ -164,7 +164,7 @@
       <string>Com-Port name</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButton_open">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -190,6 +190,16 @@
       <string>ACTION MSG BAR</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QTextEdit" name="Corr_Data_Display">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>210</y>
+      <width>360</width>
+      <height>60</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

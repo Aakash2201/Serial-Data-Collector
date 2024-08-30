@@ -82,7 +82,7 @@ void SerialThread::setupSerialPort(mySerial CurrSerial)
         MyPort.setStopBits(QSerialPort::TwoStop);
     }
 
-    else if(CurrSerial.Curr_StopBit == "ONE&HALF")
+    else if(CurrSerial.Curr_StopBit == "ONE & HALF")
     {
         MyPort.setStopBits(QSerialPort::OneAndHalfStop);
     }
@@ -136,11 +136,22 @@ void SerialThread::setupSerialPort(mySerial CurrSerial)
         // canReadLine() - Returns true if a line of data can be read from the serial port; otherwise returns false.
 
     }
+
     else
     {
         qDebug() << "Failed to open serial port for reading Incoming Data. " << MyPort.portName();
     }
 
+}
+
+// This will close current running serial port as per Users request
+void SerialThread::closeSerialPort()
+{
+    // Closing Current Port Which is Open
+    if(MyPort.isOpen())
+    {
+        MyPort.close();
+    }
 }
 
 // This function is reading the incoming data from serial port and checking whether is it correct or wrong
