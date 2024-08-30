@@ -38,8 +38,3 @@ Contributions are welcome! If you encounter issues or have feature requests, ple
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
----
-
-### Tips:
-- **Add Screenshots/GIFs**: Including visual examples of the UI and key functionalities can greatly enhance the appeal.
-- **Keep Updating**: Whenever you make significant updates, make sure to reflect those in your README to keep it current.
